@@ -1,0 +1,71 @@
+[
+  {
+    "text": "123",
+    "heading": "false"
+  },
+  {
+    "text": "车辆管理",
+    "sref": "#",
+    "icon": "Hui-iconfont Hui-iconfont-canshu",
+    "submenu": [
+      { "text": "车辆列表",
+        "icon": "Hui-iconfont Hui-iconfont-pages",
+        "sref": "admin.car"
+      },
+      { "text": "新增车辆",
+        "icon": "Hui-iconfont Hui-iconfont-add2",
+        "sref": "admin.add"
+      }
+    ],
+    "translate": "",
+    "access":["-1"]
+  },
+  {
+    "text": "提车地管理",
+    "sref": "#",
+    "icon": "Hui-iconfont Hui-iconfont-dingwei",
+    "submenu": [
+      { "text": "提车地列表",
+        "sref": "admin.unit",
+        "icon": "Hui-iconfont Hui-iconfont-pages"
+      },
+      { "text": "新增提车地",
+        "sref": "admin.unit-add",
+        "icon": "Hui-iconfont Hui-iconfont-add2"
+      }
+    ],
+    "translate": "",
+    "access":["-1"]
+  },
+  {
+    "text": "预约管理",
+    "sref": "#",
+    "icon": "Hui-iconfont Hui-iconfont-quanbudingdan",
+    "submenu": [
+      { "text": "预约管理",
+        "sref": "admin.appoin",
+        "icon": "Hui-iconfont Hui-iconfont-order"
+      }
+    ],
+    "translate": "",
+    "access":["-1"]
+
+  },
+  {
+    "text": "用户管理",
+    "sref": "#",
+    "icon": "Hui-iconfont Hui-iconfont-quanbudingdan",
+    "submenu": [
+      { "text": "用户列表",
+        "sref": "admin.user",
+        "icon": "Hui-iconfont Hui-iconfont-usergroup2"
+      },
+      { "text": "新增用户",
+        "sref": "admin.user-add",
+        "icon": "Hui-iconfont Hui-iconfont-user-add"
+      }
+    ],
+    "translate": "",
+    "access":["9"]
+  }
+]

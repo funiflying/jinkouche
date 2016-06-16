@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* 你自己的样式 */
+ a:link,
+ a:hover,
+ a:focus,
+ a:visited{
+     text-decoration: none;;
+ }
+.acrossTab li a{
+    position: relative;
+    float: left;
+    display: inline-block;
+    height: 29px;
+    line-height: 29px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 30px;
+    white-space: nowrap;
+    color: #282828;
+    background-position: 0 0;
+}
+.acrossTab li a:link,
+.acrossTab li a:hover,
+.acrossTab li a:focus,
+.acrossTab li a:visited,
+{
+    color: #282828;
+    text-decoration: none;
+}
+.input-noborder{
+    border: 0;
+    height: 20px;
+    outline: none;
+}
+.input-noborder:hover{
+    border: none;
+}
+.filter-bar{
+  vertical-align: middle;
+    margin: 25px 10px 20px 0;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 10px;
+}
+.filter-bar label{
+    margin: 0 10px 10px 10px;
+    display: inline-block;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.pagination .pagination-input>span{
+    border: none;
+}
+/*
+车辆颜色
+*/
+.color-icon{
+    display: inline-block;
+    width: 15px;
+    height:15px;
+}
+.color-1 {
+    background-color: #333332;
+    border: 1px solid transparent;
+}
+.color-2 {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+.color-3 {
+    background-color: #c9c7c5;
+    border: 1px solid transparent;
+}
+.color-4 {
+    background-color: #666666;
+    border: 1px solid transparent;
+}
+.color-5 {
+    background-color: #cc0000;
+    border: 1px solid transparent;
+}
+.color-6 {
+    background-color: #fd8301;
+    border: 1px solid transparent;
+}
+.color-7 {
+    background-color: #fff;
+    background: -webkit-linear-gradient(right,#ff0000,#f8fc01,#0eb730,#00d9ff,#0030a5,#fd00c6,#ff1100);
+    background: -o-linear-gradient(right,#ff0000,#f8fc01,#0eb730,#00d9ff,#0030a5,#fd00c6,#ff1100);
+    background: -moz-linear-gradient(right,#ff0000,#f8fc01,#0eb730,#00d9ff,#0030a5,#fd00c6,#ff1100);
+    background: linear-gradient(right,#ff0000,#f8fc01,#0eb730,#00d9ff,#0030a5,#fd00c6,#ff1100);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=＃00ffff, endColorstr=＃9fffff, grandientType=1);
+    border: 1px solid transparent;
+}
+.color-8 {
+    background-color: #22ac38;
+    border: 1px solid transparent;
+}
+.color-9 {
+    background-color: #003399;
+    border: 1px solid transparent;
+}
+.color-10 {
+    background-color: #82371e;
+    border: 1px solid transparent;
+}
+.color-11 {
+    background-color: #7d02bc;
+    border: 1px solid transparent;
+}
+.color-12 {
+    background-color: #b49766;
+    border: 1px solid transparent;
+}
+.color-13 {
+    background-color: #fdd601;
+    border: 1px solid transparent;
+}
+.color-14 {
+    background-color: #fff;
+    background: -webkit-linear-gradient(left  top,#666666, #ffffff);
+    background: -o-linear-gradient(left  top,#666666, #ffffff);
+    background: -moz-linear-gradient(left  top,#666666, #ffffff);
+    background: linear-gradient(left  top,#666666, #ffffff);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=＃00ffff, endColorstr=＃9fffff, grandientType=1);
+    /*其它*/
+    border: 1px solid transparent;
+}
+/*
+车辆管理
+*/
+.car-moreoffer{
+    padding: 10px;
+    background: #ffffff;
+    position: absolute;
+    border: 1px solid #DEDEDE;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    display: none;
+    z-index: 3;
+}
+.search-bar{
+   border-bottom: 2px solid #fbb450;
+    margin-bottom: 10px;
+    padding: 10px 20px 15px 0;
+}
+.icon-hot{
+    color: #5eb95e;
+    border: 1px solid #5eb95e;
+    font-size: 10px;
+    padding:0 1px;
+}
+.icon-agio{
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    font-size: 10px;
+    padding:0 1px;
+}
+.car-flag,.car-style,.order-flag{
+    display: inline-block;
+    padding: 3px 10px;
+    border: 1px solid #DEDEDE;
+    background:#DEDEDE ;
+    border-radius: 2px;
+}
+.order-flag{
+    margin-left: 10px;
+}
+.car-flag.active,
+.car-style.active,
+.order-flag.active{
+    border: 1px solid #5a98de;
+    background:#5a98de ;
+    color: #ffffff;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background: #DEDEDE;
+   clear: both;
+}
+.take-content{
+  position: relative;
+}
+.take-content .take-del{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;cursor: pointer;
+}
+.take-content .take-del:hover{
+    color: #ff2013;
+}
+.check-box, .radio-box{
+    padding-left: 0;
+}
+.td-manage a{
+    font-size: 16px;
+}
+/*
+ 选色板
+*/
+.color-mark-container{
+    width: 165px;
+    height: auto;
+    border: 1px solid #DEDEDE;
+    background: #ffffff;
+    padding: 15px;
+    z-index: 3;
+    position: absolute;
+}
+.color-mark-container .color-mark-item{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 3px;
+}
+.color-mark-container .color-mark-item.active,
+.color-mark-container .color-mark-item:hover{
+    border: dotted 1px #dddddd;
+}
+/*
+提车地
+*/
+.mc-select {
+    height: 33px;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.mc-select .mcs-box {
+    width: 65px;
+    margin-top: 0;
+    height: 33px;
+    line-height: 33px;
+    background: #fff;
+    border: 1px solid #C4C4C4;
+    padding: 0 30px 0 10px;
+    position: relative;
+}
+.mc-select .mcs-box em {
+    font-style: normal;
+    font-size: 12px;
+}
+.mc-select .mcs-box span {
+    width: 0;
+    border: 3px solid #fff;
+    border-top: 3px solid #C6C6C6;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 12px;
+}
+.mc-improt{
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background: #fff;
+    width:107px;
+    border-bottom: 1px solid #BABABA;
+    z-index: 101;
+    height: 400px;
+}
+.mc-improt li{
+    position: relative;
+}
+.mc-improt li .pro{
+
+}
+
+.mc-improt li .pro span{
+}
+
+
+.mc-improt li ol{
+    position: absolute;left: 106px;top: 0;width: 107px;background: #fff;
+    border: 1px solid #BABABA;border-left: none;border-right: none;
+}
+
+.mc-improt li a{
+    padding-left: 10px;height: 26px;line-height: 26px;display: block;
+    border-left: 1px solid #BABABA;
+    border-right: 1px solid #BABABA;
+}
+
+.mc-improt li a:hover{
+    color: #fff;background: #F95858;
+}
+
+.mc-improt li a.province-btn em{
+    width: 0;
+    border: 3px solid #fff;
+    border-left: 3px solid #C6C6C6;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 12px;
+}
+.mc-improt li a.province-btn:hover span{
+    color: #fff;
+}
+.mc-improt li a.province-btn:hover em{
+    border: 3px solid #F95858;
+    border-left: 3px solid #fff;
+}
+.order-toolbar{
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.order-toolbar button{
+    margin-left: 10px;
+}
+.app-path{
+    padding-left: 20px;
+    background: #DEDEDE;
+    margin-top: 5px;
+    line-height: 30px;
+}
+.page-title{
+    padding-left: 20px;
+    line-height: 35px;
+    border-bottom: 1px solid #cccccc;
+}

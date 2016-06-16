@@ -1,0 +1,65 @@
+
+<div class="pd-20" ng-init="getList()">
+    <div class="mt-20">
+        <div class="search-bar">
+            <label for="search">
+                当前页检索：
+                <input type="search" class="input-text  inline" id="search" placeholder="合作公司名称/负责人姓名" ng-model="search" style="width: 180px"/>
+            </label>
+             <span class="r">
+                <a class="btn btn-primary radius" ui-sref="admin.unit-add"><i class="Hui-iconfont">&#xe600;</i> 新增提车地</a>
+        </span>
+        </div>
+        <div class="text-l filter-bar">
+            <label>省份：
+                <span class="select-box inline">
+                    <select name="province" class="select" ng-model="Province" ng-options="p.name for p in province" ng-change="filterByProvince()">
+                        <option value="">请选择省份</option>
+                    </select>
+                 </span>
+            </label>
+            <label>城市：
+                <span class="select-box inline">
+                    <select name="city" class="select" ng-model="City" ng-options="c.name for c in city" ng-change="filterByCity()">
+                        <option value="">请选择城市</option>
+                    </select>
+                 </span>
+            </label>
+
+        </div>
+        <table class="table table-border table-bordered table-bg table-hover table-sort">
+            <thead>
+            <tr class="text-c">
+                <th width="25">序号</th>
+                <th width="80">省份</th>
+                <th width="80">城市</th>
+                <th>合作公司</th>
+                <th width="80">负责人</th>
+                <th width="120">负责人电话</th>
+                <th width="75">关联车辆</th>
+                <th width="180">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="text-c" ng-repeat="obj in list|filter:searchFilter">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="obj.Province"></td>
+                <td ng-bind="obj.City">
+                </td>
+                <td ng-bind="obj.UnionUnit"></td>
+                <td ng-bind="obj.UnionBoss"></td>
+                <td ng-bind="obj.UnionContact">
+                </td>
+                <td ng-bind="obj.UnionCarCount"></td>
+                <td class="f-14 td-manage">
+                    <a  class="ml-5 Hui-iconfont Hui-iconfont-edit1" ui-sref="admin.unit-edit({ucode:obj.UnitCode})"  title="编辑"></a>
+                    <a  class="ml-5 Hui-iconfont Hui-iconfont-del"  href="javascript:void(0);" title="删除" ng-click="deleteunit(obj.UnitCode)"></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div pagination  total-items="pageTotal" ng-model="currentPage" ng-change="changePager()"
+             previous-text="上一页" next-text="下一页" max-size="10" ng-show="pageTotal>PAGE_CONF.PageSize"></div>
+    </div>
+</div>
+
